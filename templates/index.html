@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Star Algorithm</title>
+    <link rel="shortcut icon" href="#">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+<center>
+    <div>
+        Choose your cities form Romania cities:<br>
+        'Arad ,Zerind , Oradea ,Sibiu ,Fagaras,
+                        Rimniciu Vilcea,
+                         Timisoara,
+                         Lugoj ,
+                         Mehadia ,
+                         Dobreta ,
+                          Pitesti ,
+                          Craiova ,
+                          Bucharest ,
+                          Giurgiu ,
+                          Urziceni ,
+                           Vaslui ,
+                           Lasi ,
+                            Neamt ,
+                            Hirsova ,
+                            Eforie '
+    </div><br><br>
+<b><label for="s_city"> Write your source city :</label></b><br><br>
+<input type="text" name="s_city" id="s_city" placeholder="Source City">
+<br><br>
+<b><label for="d_city"> Write your Destination city :</label></b><br><br>
+<input type="text" name="d_city" id="d_city" placeholder="Destination City">
+<br><br>
+<button id="submit">Finde The Shortest Route</button>
+<br>
+<div id="result"></div>
+    </center>
+{% load static %}
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
